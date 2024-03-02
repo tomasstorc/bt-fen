@@ -6,11 +6,19 @@ const URL =
   "https://yw2p9h7d3e.execute-api.eu-central-1.amazonaws.com/api/employees";
 const columns = [
   {
-    name: "Title",
+    name: "ID",
     selector: (row) => row.title,
   },
   {
-    name: "Year",
+    name: "First name",
+    selector: (row) => row.year,
+  },
+  {
+    name: "Last name",
+    selector: (row) => row.year,
+  },
+  {
+    name: "email",
     selector: (row) => row.year,
   },
 ];
@@ -40,12 +48,13 @@ function App() {
           useGrouping: false,
         })}`;
         setTime(humanDiff);
+        console.log(humanDiff);
       });
   };
   return (
     <>
       <button onClick={handleClick}>Get Data</button>
-      time {time}
+      <div>time {time}</div>
       <DataTable columns={columns} data={dbRes} />
     </>
   );
