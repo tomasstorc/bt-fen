@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import DataTable from "react-data-table-component";
 
-const URL = "";
+const URL =
+  "https://yw2p9h7d3e.execute-api.eu-central-1.amazonaws.com/api/employees";
 const columns = [
   {
     name: "Title",
@@ -22,7 +23,7 @@ function App() {
     const start = new Date()
       .then((res) => res.json())
       .then((data) => {
-        setDbRes(data);
+        setDbRes(data.data);
         const end = new Date();
         const diff = end - start;
         const SEC = 1000,
