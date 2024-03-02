@@ -7,19 +7,15 @@ const URL =
 const columns = [
   {
     name: "ID",
-    selector: (row) => row.title,
   },
   {
     name: "First name",
-    selector: (row) => row.year,
   },
   {
     name: "Last name",
-    selector: (row) => row.year,
   },
   {
     name: "email",
-    selector: (row) => row.year,
   },
 ];
 
