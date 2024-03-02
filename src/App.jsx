@@ -23,8 +23,8 @@ function App() {
   const [time, setTime] = useState();
   const [dbRes, setDbRes] = useState([]);
   const handleClick = () => {
-    fetch(URL);
-    const start = new Date()
+    const start = new Date();
+    fetch(URL)
       .then((res) => res.json())
       .then((data) => {
         setDbRes(data.data);
