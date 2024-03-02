@@ -30,4 +30,4 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "src" # App source code path
           output_location: "dist"
-          skio_api_build: true
+          skip_api_build: true
