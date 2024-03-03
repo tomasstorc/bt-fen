@@ -1,27 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import DataTable from "react-data-table-component";
+import { URL, columns } from "./consts";}
 
-const URL =
-  "https://9sp0o1aq86.execute-api.eu-central-1.amazonaws.com/api/employees";
-const columns = [
-  {
-    name: "ID",
-    selector: (row) => row.id,
-  },
-  {
-    name: "First name",
-    selector: (row) => row.first_name,
-  },
-  {
-    name: "Last name",
-    selector: (row) => row.last_name,
-  },
-  {
-    name: "email",
-    selector: (row) => row.email,
-  },
-];
 
 function App() {
   const [time, setTime] = useState();
