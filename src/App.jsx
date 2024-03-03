@@ -8,13 +8,13 @@ function App() {
   const [dbRes, setDbRes] = useState([]);
   const [dbTime, setDbTime] = useState(0);
   const handleClick = () => {
-    const start = new Date().getTime();
+    const start = performance.now();
     fetch(URL)
       .then((res) => res.json())
       .then((data) => {
         setDbRes(data.data);
         setDbTime(data.time);
-        const end = new Date().getTime();
+        const end = performance.now();
         const diff = end - start;
         setTime(diff);
       });
