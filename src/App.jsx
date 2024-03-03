@@ -4,9 +4,9 @@ import DataTable from "react-data-table-component";
 import { URL, columns } from "./consts";
 
 function App() {
-  const [time, setTime] = useState();
+  const [time, setTime] = useState(0);
   const [dbRes, setDbRes] = useState([]);
-  const [dbTime, setDbTime] = useState();
+  const [dbTime, setDbTime] = useState(0);
   const handleClick = () => {
     const start = performance.now();
     fetch(URL)
