@@ -12,12 +12,10 @@ function App() {
     fetch(URL)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.data, "returned data");
         setDbRes(data.data);
         const end = new Date().getTime();
         const diff = end - start;
         setTime(diff);
-        console.log(diff, dbRes);
       });
   };
   return (
