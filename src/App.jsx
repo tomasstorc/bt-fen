@@ -3,7 +3,7 @@ import "./App.css";
 import DataTable from "react-data-table-component";
 
 const URL =
-  "https://yw2p9h7d3e.execute-api.eu-central-1.amazonaws.com/api/employees";
+  "https://9sp0o1aq86.execute-api.eu-central-1.amazonaws.com/api/employees";
 const columns = [
   {
     name: "ID",
