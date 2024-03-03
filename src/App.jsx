@@ -24,9 +24,9 @@ function App() {
       <button onClick={handleClick}>Získat data</button>
       <DataTable columns={columns} data={dbRes} />
       <div style={{ color: "black" }}>
-        čas dotazu z aplikační vrstvy na databázovou vrstu: {dbTime}ms
+        čas dotazu z aplikační vrstvy na databázovou vrstu: {dbTime}s
       </div>
-      <div style={{ color: "black" }}>Celkový čas dotazu: {time}ms</div>
+      <div style={{ color: "black" }}>Celkový čas dotazu: {time / 1000}s</div>
     </>
   );
 }
