@@ -41,8 +41,8 @@ function App() {
   };
   return (
     <>
-      <button onClick={handleClick}>Get Data</button>
-      <div>time {time}</div>
+      <button onClick={handleClick}>Získat data</button>
+      <div style={{ color: "black" }}>celkový čas {time}</div>
       <DataTable columns={columns} data={dbRes} />
     </>
   );
