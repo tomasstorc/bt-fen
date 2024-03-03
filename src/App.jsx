@@ -25,10 +25,10 @@ function App() {
       <DataTable columns={columns} data={dbRes} />
       <div style={{ color: "black" }}>
         čas dotazu z aplikační vrstvy na databázovou vrstu:{" "}
-        {Number(dbTime).toFixed(2)}s
+        {parseFloat(dbTime).toFixed(2)}s
       </div>
       <div style={{ color: "black" }}>
-        Celkový čas dotazu: {Number(time / 1000).toFixed(2)}s
+        Celkový čas dotazu: {parseFloat(time / 1000).toFixed(2)}s
       </div>
     </>
   );
