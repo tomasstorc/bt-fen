@@ -22,7 +22,11 @@ function App() {
   return (
     <>
       <button onClick={handleClick}>Získat data</button>
-      <DataTable columns={columns} data={dbRes} />
+      <DataTable
+        columns={columns}
+        data={dbRes}
+        noDataComponent="Žádná data k zobrazení"
+      />
       <div style={{ color: "black" }}>
         čas dotazu z aplikační vrstvy na databázovou vrstu:{" "}
         {parseFloat(dbTime).toFixed(2)}s
