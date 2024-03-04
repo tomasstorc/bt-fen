@@ -1,5 +1,5 @@
 export const URL =
-  "https://9sp0o1aq86.execute-api.eu-central-1.amazonaws.com/api/employees";
+  "https://dpq4gozyfh.execute-api.eu-central-1.amazonaws.com/api/employees";
 export const columns = [
   {
     name: "ID",
